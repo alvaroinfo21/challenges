@@ -4,6 +4,8 @@
         <title>Simple Clock</title>    
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style/reset.css">
+        <link rel="stylesheet" type="text/css" href="style/simpleClockStyle.css">
         <script type="text/javascript">
             setInterval(myClock, 500)
             function myClock(){
@@ -12,7 +14,7 @@
                 let minutes = time.getMinutes()
                 let seconds = time.getSeconds()
 
-                document.getElementById("clock").innerText = hour + " : " + minutes + " : " +  seconds
+                document.getElementById("clock").innerText = hour + ":" + minutes + ":" +  seconds
             
             }        
         </script>
